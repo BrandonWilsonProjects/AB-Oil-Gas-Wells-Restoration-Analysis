@@ -1,12 +1,12 @@
 Abandoned and orphaned oil and gas wells across the United States (evident in Figure 1.) pose ongoing environmental and economic risks, including emissions of volatile organic compounds (VOCs), groundwater contamination, and methane leaks. Across the U.S., numerous oil and gas companies have optimized their contractual agreement with their respective property lenders, mainly commercial banks and private equity, and, in return, left the property with overall diminished value. So, for these property lenders, the ultimate question becomes, how can the land restore its value, either agriculturally or by clean energy, once the contractual agreement is met and the oil or gas company decommissions their infrastructure? This specific project aims to explore how predictive models use spatial, environmental, and economic datasets to estimate post-restoration land value (in dollars per acre) for abandoned gas well sites. Addressing this challenge requires scalable, data-driven strategies for prioritizing land evaluation. 
 
-![Abandoned oil/gas wells across the U.S.](abwells_copy\saved_plots\uswells.png)
+![Abandoned oil/gas wells across the U.S.](saved_plots/uswells.png)
 
 Figure 1: Distribution of abandoned oil and gas wells nationwide.
 
 A combination of USGS, NASA POWER and USDA Land Survey Data were utilized to create an optimized dataset for this case study. By combining these reputable data sources, quantifiable details of renewable energy potential and land value economics harmoniously merge to create an intricate picture of how environmental variables impact property value. 
 
-![Dataset](abwells_copy\saved_plots\dataset_head.png)
+![Dataset](saved_plots/dataset_head.png)
 
 Figure 2:  Head of the dataset. 
 
@@ -14,11 +14,11 @@ To avoid misinterpreting the relationship between post-restoration land value an
 
 There is a significant tradeoff to concentrating the data, as selection bias and suppressed heterogeneity amongst environmental covariables increase concern in generalizability. However, the return of lower noise and ‘proof-of-concept’ was more important for the sake of this analysis. It is encouraged to view the more detailed explanation within the code file. 
 
-![Irradiance distribution](abwells_copy\saved_plots\consistency.png)
+![Irradiance distribution](saved_plots/consistency.png)
 
 Figure 3: Solar irradiance consistency for gas wells. 
 
-![U.S. solar irradiance map](abwells_copy\saved_plots\spatiallyconsistentwells.png)
+![U.S. solar irradiance map](saved_plots/spatiallyconsistentwells.png)
 
 Figure 4: Concentration of analyzed wells in the West South Central region. 
 
@@ -26,7 +26,7 @@ Becasuse the data displays potential multicollinearity (between historic and cur
 
 Results, displayed in Figure 5., indicate that both environmental variables and historical farmland value provide significant predictive signal, with spatial features materially enhancing model performance. Nearly all variance in farmland value is explained by the feature set. 
 
-![Model results](abwells_copy\saved_plots\model_comparison_boxplot.png)
+![Model results](saved_plots/model_comparison_boxplot.png)
 
 Figure 5: Comparing model results. 
 
